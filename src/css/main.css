@@ -1,0 +1,6 @@
+/**
+ * This is the main entry point for the styling of this project.
+ * Import other (partial) stylesheets this project depends on.
+ */
+@import 'font.css';
+@import 'example.css';

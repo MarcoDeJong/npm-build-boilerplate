@@ -1,0 +1,26 @@
+/**
+ * Example of a partial stylesheet to demonstrate
+ * CSS @import and CSS variables (and auto prefixing)
+ * Borrowed from http://enjoycss.com/gallery/text_effects/ec
+ */
+
+:root {
+    --main-color: rgb(112, 112, 112);
+}
+
+.retro {
+    border: none;
+    box-sizing: content-box;
+    color: var(--main-color);
+    font: normal 82px/normal "Anton", Helvetica, sans-serif;
+    letter-spacing: 10px;
+    margin: 0 auto;
+    text-align: center;
+    text-overflow: clip;
+    text-shadow: 4px 4px 0 rgb(238,238,238) , 6px 6px 0 var(--main-color);
+    text-transform: uppercase;
+    transition: transform .8s ease-in-out;
+}
+.retro:hover {
+    transform: rotate(-5deg);
+}
